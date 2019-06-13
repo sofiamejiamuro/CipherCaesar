@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+<html lang="es">
+    <head>
+        <title>CIPHER CESAR PROJECT</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="proyecto cifrado Cesar Laboratoria">
+        <meta name="author" content="SOFIA MEJIA">
+        <!--estilos CSS-->
+        <link rel="stylesheet" href="style.css">
+        <!--fuentes GOOGLE-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,800&display=swap" rel="stylesheet"> 
+    </head> 
+
+<body>
+    <!--APP1-->
+  
+    <section id ="inicio" class="app1imagen">       
+        <main class="cuadrito">
+            <h1 class="cosp">COWORKING SPACES</h1>              
+            <p class="singUp">SING UP</p>
+            <p class="codigo" >
+                <a id="enlaceCodigoDeAcceso" href="#codigoDeAcceso">CÓDIGO <br> DE ACCESO</a></p>-->
+        </main>
+    </section>
+    
+    <!--APP2-->    
+    <article id="crearCuenta">
+        <main class="formularioCrearCuenta">
+            <h1>SING UP</h1>
+            
+            <form>                
+                <!--USERNAME UNPUT-->
+                <label for="username">Ingresa tu nombre</label>
+                <input id="name" type="text" placeholder="nombre" value="">
+                <!--PALABRA CLAVE-->
+                <label for="keyword">Ingresa tu palabra clave</label>
+                <input id="keyword" type="text" placeholder="palabra clave" value="">
+                <!--NUMERO DE SEGURIDAD-->
+                <label for="offset">Ingresa tu número de seguridad</label>
+                <input id="offset" type="text" placeholder="un numero que no vayas a olvidar" value="">
+                
+                <a id="enlaceBienvenida" href="#cuentaCreada" >CREAR CUENTA</a>
+
+            </form>
+            
+        </main>
+      
+        <footer>
+        <!--cómo pongo la flecha??
+            <a href="#inicio">FLECHA footer</a>-->
+        </footer>
+    </article>
+
+    <!--APP3-->
+    <section id="cuentaCreada" class="app3imagen">
+        <h1>BIENVENIDO</h1>
+        <h3>Ahora puedes acceder a tu espacio</h3>
+
+        <footer>
+            <a href="#inicio">FLECHA</a> <!--COMO PONGO LA FLECHA?-->
+        </footer>
+    </section>
+
+    <!--APP5-->
+    <main id="codigoDeAcceso">
+        <form action="">
+            <!--hacer 1 input // este te da el codigo sin pedirlo -->
+        </form>
+        <footer>
+            <a href="#inicio">FLECHA</a> <!--cómo pongo la flecha???-->
+        </footer>
+    </main>
+
+<!--SCRIPT-->
+    <script src="app.js"></script>  
+
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <!--<script src="index.js"></script>-->
+
+
   </body>
+
+
+
+
 </html>
