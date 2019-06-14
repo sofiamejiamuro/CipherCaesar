@@ -5,9 +5,7 @@
 
 const mostrarCodigoDeAcceso = () => {
     let aparecerCodigoDeAcceso = document.getElementById("codigoDeAcceso");
-
     aparecerCodigoDeAcceso.style.display = "block";
-
     return aparecerCodigoDeAcceso;
 }
 
@@ -18,64 +16,38 @@ const enlaceCodigoDeAcceso = document.getElementById("enlaceCodigoDeAcceso");
 
 // de APP2 a APP3
 
-const mostrarCuentaCreadaYRecuperarDatos = () => {
-
-    let aparecerCuentaCreada = document.getElementById("cuentaCreada");
-    
+const mostrarCuentaCreada = () => {         
+    let aparecerCuentaCreada = document.getElementById("cuentaCreada");    
     aparecerCuentaCreada.style.display = "block";
-    
-    let name = document.getElementById("name").value;
-    let keyword = document.getElementById("keyword").value;
+
+
+
+
+
+    let string = document.getElementById("keyword").value;
     let offset = document.getElementById("offset").value;
+    /*window.cipher.encode(offset,string);//invoca al metodo que se ecnuntra en window.cipher , hay que escribir la "ruta" hacua */
     
-    let asciiKW = keyword.charCodeAt(0); // código ascii
-    
-    let formula = (asciiKW -65 + offset) %26 + 65 ;
-
-    let palabraCodificada = String.fromCharCode(formula);
-    
-
-    
-
-  
-   console.log(palabraCodificada);
-
-    }
-
-    
-    
-    //qué hago aqui?,  Return abre la puerta del scoope??
-
-    const enlaceBienvenida = document.getElementById("enlaceBienvenida");
-    enlaceBienvenida.addEventListener("click",mostrarCuentaCreadaYRecuperarDatos);
+    /*bienvenido tu codigo cifrado es, cómo lo conecto sin esto?*/ 
+        let tamano = string.length;      /*tamaño de la palabra*/
+        let numOf = parseInt(offset);   /*numero*/
+        let ascii;                        /*pasar a ascii*/  
+        let formula;                      
+        let cifrado = "";
 
 
-//programación orientada a eventos
-// en 7 recuperamos info de HTML 
-// en 8 dotas a l ainfo de html de propiedades js al convertirlo en objeto
-// .addEventListener es un metodo 
-// y despues ya haces parametrso + fiuncion sin necesida de estableces una 
-// const como función 
-// const enlaceBienvenida = document.getElementById("enlaceBienvenida");
-//     enlaceBienvenida.addEventListener("click", mostrarCuentaCreada); 
-    /*en lugar de mostrarCuentaCreada
-    /*
-    const enlaceBienvenida = document.getElementById("enlaceBienvenida");
-    enlaceBienvenida.addEventListener("click", () => return {
+        for (let i=0; i<tamano; i++){
 
-        let aparecerCuentaCreada = document.getElementById("cuentaCreada");
+          ascii = string.charCodeAt(i);
+          formula = (ascii-65+numOf)%26+65;
+          cifrado = cifrado+String.fromCharCode(formula); 
 
-        aparecerCuentaCreada.style.display = "block";
-        
-        return aparecerCuentaCreada;
-        //qué hago aqui?
-    
-    }*/
+          console.log(cifrado);
 
-     
+        }
 
-    /*recuperar valores*/
-   
+       
+}
 
-
-   /*hacer un array??*/
+const enlaceCuentaCreada = document.getElementById("enlaceBienvenida");
+    enlaceCuentaCreada.addEventListener("click",mostrarCuentaCreada);
