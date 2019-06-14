@@ -18,19 +18,36 @@ const enlaceCodigoDeAcceso = document.getElementById("enlaceCodigoDeAcceso");
 
 // de APP2 a APP3
 
-const mostrarCuentaCreada = () => {
+const mostrarCuentaCreadaYRecuperarDatos = () => {
 
     let aparecerCuentaCreada = document.getElementById("cuentaCreada");
     
     aparecerCuentaCreada.style.display = "block";
     
-    return aparecerCuentaCreada;
-    //qué hago aqui?, abre la puerta del scoope
+    let name = document.getElementById("name").value;
+    let keyword = document.getElementById("keyword").value;
+    let offset = document.getElementById("offset").value;
+    
+    let asciiKW = keyword.charCodeAt(0); // código ascii
+    
+    let formula = (asciiKW -65 + offset) %26 + 65 ;
 
-}
+    let palabraCodificada = String.fromCharCode(formula);
+    
+
+    
+
+  
+   console.log(palabraCodificada);
+
+    }
+
+    
+    
+    //qué hago aqui?,  Return abre la puerta del scoope??
 
     const enlaceBienvenida = document.getElementById("enlaceBienvenida");
-    enlaceBienvenida.addEventListener("click",mostrarCuentaCreada);
+    enlaceBienvenida.addEventListener("click",mostrarCuentaCreadaYRecuperarDatos);
 
 
 //programación orientada a eventos
@@ -57,18 +74,8 @@ const mostrarCuentaCreada = () => {
 
      
 
-        
-
-        let name = document.getElementById("name").value;
-        let keyword = document.getElementById("keyword").value;
-        let offset = document.getElementById("offset").value;
-    
-        console.log("estoy guardando las variables");
-        
-        
-
-
+    /*recuperar valores*/
    
-    
 
 
+   /*hacer un array??*/
