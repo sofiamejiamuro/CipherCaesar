@@ -1,4 +1,8 @@
+
+
+
 window.cipher = {
+
      encode : (offset, string) => {
 
         string = string.toUpperCase();
@@ -17,9 +21,22 @@ window.cipher = {
             
         }
 
-       
         console.log(encripted);
+        enviarvariable(encripted);
+        
+        
+       
 
     }
+  
+
 
 }
+
+const enviarvariable = (encripted)=>{
+    window.location.href= 'door.html'+'#'+ encripted, '_blank';
+    
+}
+
+
+

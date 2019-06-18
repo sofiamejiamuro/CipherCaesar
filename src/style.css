@@ -210,3 +210,13 @@ a#enlaceCodigoDeAcceso{
 }
 
 
+/* DOOR 2*/
+#correcto {
+    display: none;
+
+}
+
+
+#incorrecto {
+    display: none;
+}

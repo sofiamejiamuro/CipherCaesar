@@ -10,11 +10,24 @@ const mostrarCodigoCreado = () => {
     let offset = document.getElementById("offset").value;
   
     window.cipher.encode(offset, string) //llamas a la funcion en cipher
-
+    
+    
+    
     
     }
 
 const enlaceCuentaCreada = document.getElementById("enlaceBienvenida");
     enlaceCuentaCreada.addEventListener("click",mostrarCodigoCreado);
 
+
+
+
+/* const mostrarEntrada = () => {
+    let aparecerAcceso = document.getElementById("correcto");
+    aparecerAcceso.style.display = "block";
+    
+}
+
+const enlaceAcceso = document.getElementById("enlaceEntrar");
+    enlaceAcceso.addEventListener("click",mostrarEntrada); */
     
