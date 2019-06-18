@@ -30,17 +30,17 @@
             <h1>SING UP</h1>
             
             <form>                
-                <!--USERNAME UNPUT-->
+                <!--USERNAME UNPUT-->   
                 <label for="username">Ingresa tu nombre</label>
-                <input id="name" type="text" placeholder="nombre" value="">
+                <input id="name1" type="text" placeholder="nombre" value="" required> <!--Cómo hago que los campos sean oblogatorios?-->
                 <!--PALABRA CLAVE-->
                 <label for="keyword">Ingresa tu palabra clave</label>
-                <input id="keyword" type="text" placeholder="palabra clave" value="">
+                <input id="keyword1" type="text" placeholder="palabra clave" value="" required>
                 <!--NUMERO DE SEGURIDAD-->
                 <label for="offset">Ingresa tu número de seguridad</label>
-                <input id="offset" type="text" placeholder="un numero que no vayas a olvidar" value="">
+                <input id="offset1" type="text" placeholder="un numero que no vayas a olvidar" value="" required>
                 
-                <a id="enlaceBienvenida" href="#cuentaCreada" target='_top' >NUEVO CÓDIGO</a>
+                <a id="enlaceBienvenida" href="#cuentaCreada" >NUEVO CÓDIGO</a>
 
             </form>
             
@@ -61,10 +61,50 @@
         <h2 class="texto1App3">Tu código para acceder a tu COWORKING SPACE:</h2>
         </div>
         <div class="app3h3">
-        <h3 id="encriptedkeyword" class="texto2App3"></h3>
+        <h3 id="encryptedkeyword" class="texto2App3" ></h3>
+        <a id="enlacePuerta" href="#puerta">Pantalla de puerta ficticia</a>
         </div>
+
+       
         
     </main>
+    
+    
+    
+    
+    
+    <!--DOOR-->
+    <!--DOOR-->
+
+    <!--DOOR1-->
+    <section id="puerta">
+        <form >
+            <!--USER NAME-->
+            <label for="username">Ingresa tu nombre</label>
+            <input id="name2" type="text" placeholder="nombre" value="" required>
+            <!--USER CODe-->
+            <label for="codigo">Ingresa tu código</label>
+            <input id="codigo" type="text" placeholder="codigo" value="" required>
+            <a id="enlaceCorrecto" href="#correcto">ENVIAR</a>
+ 
+        </form>
+
+     </section>
+
+         <!--DOOR2-->
+    <section id="correcto">
+        <h1>ENTRA</h1>
+        <h3 id="decryptedword">tu palabra claves es: </h3>
+        <p>flechita de regreso</p>
+    </section>
+
+    <!--DOOR3-->
+    <section id="incorrecto">
+        <h1>Codigo o usuario incorreccto</h1>
+        <a id="volverAIntentar"href="#nombreYcodigo"></a>
+        
+    </section>
+   
 
 <!--SCRIPT-->
 

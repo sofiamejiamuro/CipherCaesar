@@ -1,42 +1,51 @@
 
-
-
 window.cipher = {
 
-     encode : (offset, string) => {
+       
+    encode : (offset, string) => {
 
         string = string.toUpperCase();
         offset = parseInt(offset);
+    
         let desplazamiento = "";
-        let encripted = "";
+        let encrypted = "";
 
         for (let i = 0; i < string.length; i ++) {
             
             let ascii = string.charCodeAt(i); //nos da su posicion ascii
             desplazamiento =  (ascii-65+offset)%26+65; // nos recorre el offset 
-            encripted = encripted+String.fromCharCode(desplazamiento);
-            document.getElementById("encriptedkeyword").innerHTML= encripted;
+            encrypted = encrypted+String.fromCharCode(desplazamiento); //la vuelve no ascii otra vez
+            document.getElementById("encryptedkeyword").innerHTML = encrypted;
 
             
             
         }
 
-        console.log(encripted);
-        enviarvariable(encripted);
-        
-        
-       
-
+        // console.log(encripted);
+        return encrypted;
     }
-  
 
+   /* decode : (offset, palabraEncriptada) => {
+          
+        offset = parseInt(offset);
+        let quitarOffset = ""
+        let decrypted = ""
+        
+        for (let i = 0; i < palabraEncriptada.length; i ++) {
+
+        let volverAscii = palabraEncriptada.charCodeAt(i);
+        quitarOffset = (volverAscii-65-offset)%26+65;
+        decrypted = decrypted+String.fromCharCode(quitarOffset);
+        document.getElementById("decryptedword").innerHTML=decrypted;
+        
+
+            
+
+        }
+        return decrypted; 
+
+    } */
 
 }
-
-const enviarvariable = (encripted)=>{
-    window.location.href= 'door.html'+'#'+ encripted, '_blank';
-    
-}
-
 
 

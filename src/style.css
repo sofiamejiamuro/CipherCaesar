@@ -209,6 +209,25 @@ a#enlaceCodigoDeAcceso{
     margin: 0;
 }
 
+#codigoCreado a {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(20, 158, 151, 0.5);
+    position: relative;
+    top: 80%;
+    left:  30%;;
+    color:  rgb(32, 35, 36);
+    font-size: 2em;
+    text-decoration-line: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: 3px 3px;
+}
+
+/*DOOR1*/
+#puerta {
+    display: none;
+}
 
 /* DOOR 2*/
 #correcto {
@@ -216,7 +235,7 @@ a#enlaceCodigoDeAcceso{
 
 }
 
-
+/*DOOR3*/
 #incorrecto {
     display: none;
 }
