@@ -16,11 +16,12 @@
   
     <section id ="inicio" class="app1imagen">       
         <main class="cuadrito">
-            <h1 class="cosp">COWORKING SPACES</h1>              
-            <p class="singUp">SING UP</p>
-            <p class="codigo" >
+            <h1 class="cosp">COWORKING SPACES</h1>             
+            <p class="codigo">
+                <!--poner flechita para abajo-->
                 <a id="enlaceCodigoDeAcceso" href="#codigoDeAcceso">CÓDIGO <br> DE ACCESO</a></p>-->
-        </main>
+        
+            </main>
     </section>
     
     <!--APP2-->    
@@ -39,7 +40,7 @@
                 <label for="offset">Ingresa tu número de seguridad</label>
                 <input id="offset" type="text" placeholder="un numero que no vayas a olvidar" value="">
                 
-                <a id="enlaceBienvenida" href="#cuentaCreada" >CREAR CUENTA</a>
+                <a id="enlaceBienvenida" href="#cuentaCreada" >NUEVO CÓDIGO</a>
 
             </form>
             
@@ -51,30 +52,24 @@
         </footer>
     </article>
 
+  
+    
     <!--APP3-->
-    <section id="cuentaCreada" class="app3imagen">
-        <h1>BIENVENIDO</h1>
-        <h3 id = "palabraEncriptada">Ahora puedes acceder a tu espacio</h3>
-
-        <footer>
-            <a href="#inicio">FLECHA</a> <!--COMO PONGO LA FLECHA?-->
-        </footer>
-    </section>
-
-    <!--APP5-->
-    <main id="codigoDeAcceso">
-        <form action="">
-            <!--hacer 1 input // este te da el codigo sin pedirlo -->
-        </form>
-        <footer>
-            <a href="#inicio">FLECHA</a> <!--cómo pongo la flecha???-->
-        </footer>
+    <main id="codigoCreado">
+        
+        <div class="app3h2">
+        <h2 class="texto1App3">Tu código para acceder a tu COWORKING SPACE:</h2>
+        </div>
+        <div class="app3h3">
+        <h3 id="encriptedkeyword" class="texto2App3"></h3>
+        </div>
+        
     </main>
 
 <!--SCRIPT-->
 
-     <script src="index.js"></script>
-    <!--<script src="cipher.js"></script>-->
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
    
 
 

@@ -3,6 +3,9 @@ body,p,h1 {
     padding: 0;
     
 }
+
+/*APPcoworking*/
+
  section, main , article{
     width: 100%;
     height: 100vh;
@@ -68,11 +71,12 @@ a#enlaceCodigoDeAcceso{
     /*font*/
 }
 
-/*APP2*/
+/*APP2 sing up */
 #crearCuenta {
     background-image: url(imagesApp/img2.jpg);
     background-size: 100% 100%; 
     background-attachment: fixed;
+    display: block;
 }
 
 .formularioCrearCuenta {
@@ -141,17 +145,68 @@ a#enlaceCodigoDeAcceso{
       background-color: rgba(136,212,152,1);
      
   }
+
 /*APP3*/
-#cuentaCreada {
-    background-image: url(imagesApp/img3.jpg);
-    display: none;
 
-}
-
-/*APP5*/
-#codigoDeAcceso {
+#codigoCreado {
 
     background-image: url(imagesApp/img4.jpg);
    
-   display: none;
+    display: none;
+
+    
 }
+
+
+.app3h2 {
+    
+    width: 50%;
+    height: 100%;
+    float: left;        
+    position: relative;    
+    top: 0%;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.texto1App3 {
+    background-color: rgba(45,65,64,.6);
+    color: rgb(189,218,224);
+    font-size: 5em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 23%;
+    margin: 0;
+}
+
+
+
+.app3h3 {
+    
+    width: 50%;
+    height: 100%;
+    float: right;   
+    position: relative;
+   
+    top: 0%;   
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.texto2App3 {
+    background-color: rgba(45,65,64,.6);
+    color: rgb(189,218,224);
+    font-size: 4em;
+    font-family: 'Montserrat Alternates', sans-serif; 
+    text-align: center;
+    position: relative;
+    top: 45%;
+    margin: 0;
+}
+
+
