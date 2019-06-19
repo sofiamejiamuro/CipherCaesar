@@ -20,7 +20,7 @@ window.cipher = {
             
             
         }
-
+                
         // console.log(encripted);
         return encrypted;
     }
