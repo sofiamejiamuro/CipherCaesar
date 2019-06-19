@@ -33,7 +33,7 @@ const puedesEntrar = () => {
     let desaparecerPuerta = document.getElementById("puerta");
     let offset2 = document.getElementById("offset1").value;
     
-     
+    
 
     if (name1 == name2 && codigo == palabraEncriptada) {
  
@@ -42,7 +42,9 @@ const puedesEntrar = () => {
         codigoCorrecto.style.display="block";        
         desaparecerPuerta.style.display="none"; 
 
-        offset2 = parseInt(offset2);
+        
+       
+        /*offset2 = parseInt(offset2);
         let quitarOffset = "";
         let decrypted = "";
         
@@ -51,15 +53,16 @@ const puedesEntrar = () => {
         let volverAscii = palabraEncriptada.charCodeAt(i);
         quitarOffset = (volverAscii-65-offset2)%26+65;
         decrypted = decrypted+String.fromCharCode(quitarOffset);
-        document.getElementById("decryptedword").innerHTML=decrypted;        
+        document.getElementById("decryptedword").innerHTML=decrypted;        */
 
-        } } else {
+        }  else {
 
         let codigoIncorrecto =document.getElementById("incorrecto");
         codigoIncorrecto.style.display="block";            
         desaparecerPuerta.style.display="none"; 
     }
 
+    window.cipher.decode(offset2, palabraEncriptada);
 
         
 }
