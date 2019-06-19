@@ -31,21 +31,35 @@ const puedesEntrar = () => {
     let codigo = document.getElementById("codigo").value;
     let palabraEncriptada = document.getElementById("encryptedkeyword").textContent;
     let desaparecerPuerta = document.getElementById("puerta");
-  
-    if (name1 == name2 && codigo == palabraEncriptada ) {
+    let offset2 = document.getElementById("offset1").value;
+    
+     
+
+    if (name1 == name2 && codigo == palabraEncriptada) {
  
-        /*window.cipher.decode(offset, palabraEncriptada);*/
+        
         let codigoCorrecto = document.getElementById("correcto");
         codigoCorrecto.style.display="block";        
         desaparecerPuerta.style.display="none"; 
-        
 
-    } else {
+        offset2 = parseInt(offset2);
+        let quitarOffset = "";
+        let decrypted = "";
+        
+        for (let i = 0; i < palabraEncriptada.length; i ++) {
+
+        let volverAscii = palabraEncriptada.charCodeAt(i);
+        quitarOffset = (volverAscii-65-offset2)%26+65;
+        decrypted = decrypted+String.fromCharCode(quitarOffset);
+        document.getElementById("decryptedword").innerHTML=decrypted;        
+
+        } } else {
 
         let codigoIncorrecto =document.getElementById("incorrecto");
         codigoIncorrecto.style.display="block";            
         desaparecerPuerta.style.display="none"; 
     }
+
 
         
 }
