@@ -225,17 +225,167 @@ a#enlaceCodigoDeAcceso{
 }
 
 /*DOOR1*/
+#color {
+
+    margin: 0%;
+    padding: 0%;
+
+    height: 75%;
+    width: 66.5%;
+
+    background-image: url(imagesApp/img3.jpg);
+    position: relative;
+    
+    top: 12.3%;
+    left: 17%;
+    z-index: -1000;
+}
+
+
+#puerta, #correcto, #incorrecto {
+    background-image: url(imagesApp/img5.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    margin: 0%;
+    padding: 0%;
+    z-index: -3000;
+
+} 
+
+
 #puerta {
+   
     display: none;
 }
 
+
+#formPuerta {
+    
+    height: 43%;
+    width: 30%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: rgba(145, 61, 94, .7);
+
+    margin: 0%;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+  
+    float: left;
+    z-index: 1000;
+    position: relative;
+    top: 20%;
+    left: 22%;
+
+    border-radius: 20px;
+}
+
+#formPuerta label {
+    text-align: center;
+    display: block;
+    color:rgba(177, 180, 89, 1);
+    padding: 3px;
+}
+
+#formPuerta input{
+    width: 70%;
+    padding: 5px;
+    border: none;    
+    border-bottom: 1px solid grey;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+#formPuerta a {
+
+    border: none;
+    outline:none;
+    height: 50px;
+    width: 80%;
+    background: rgba(70, 71, 1, .7);
+    text-decoration: none;    
+    margin: 15px 0 0 0;
+    padding: 3px 0 0 0;
+    text-align: center;
+    color: rgba(177, 180, 89, 1);
+    display: block;
+    position: relative;
+    left: 10%;
+    top: 12%;
+    border-radius: 20px;
+}
 /* DOOR 2*/
 #correcto {
     display: none;
 
 }
 
+/* cómo hago para que cuando cambie la letra no se mueva todo?*/
+#correcto p  {
+    margin: 0;
+    padding: 80px 20px;
+    float: left;
+    z-index: 1000;
+    position: relative;
+    top: 20%;
+    left: 25%;    
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: rgba(145, 61, 94, .7);
+    color:rgba(177, 180, 89, 1);
+    text-align: center;
+    border-radius: 20px;
+    font-size: 2em;
+    
+    
+    
+}
+
+
 /*DOOR3*/
 #incorrecto {
     display: none;
+    
 }
+
+#incorrecto p {
+    margin: 0;
+    padding: 80px 20px;
+    float: left;
+    z-index: 1000;
+    position: relative;
+    top: 20%;
+    left: 25%;    
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: rgba(145, 61, 94, .7);
+    color:rgba(177, 180, 89, 1);
+    text-align: center;
+    border-radius: 20px;
+    font-size: 2em;   
+}
+
+#incorrecto a {
+    border: none;
+    outline:none;
+    height: 50px;
+    width: 80%;
+    background: rgba(70, 71, 1, .7);
+    text-decoration: none;    
+    margin: 15px 0 0 0;
+    padding: 3px 0 0 0;
+    text-align: center;
+    color: rgba(177, 180, 89, 1);
+    display: block;
+    position: relative;
+    left: 10%;
+    top: 12%;
+    border-radius: 20px;
+}
+
+

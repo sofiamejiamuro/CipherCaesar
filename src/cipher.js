@@ -35,7 +35,7 @@ window.cipher = {
         for (let i = 0; i < palabraEncriptada.length; i ++) {
 
             let volverAscii = palabraEncriptada.charCodeAt(i);
-            quitarOffset = (volverAscii+65-offset2)%26+65;
+            quitarOffset = (volverAscii + 65 - offset2) % 26 + 65;
             //desplazamiento =  (ascii-65+offset)%26+65;
             decrypted = decrypted+String.fromCharCode(quitarOffset);
             document.getElementById("decryptedword").innerHTML=decrypted;     

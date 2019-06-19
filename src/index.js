@@ -9,7 +9,7 @@ const mostrarCodigoCreado = () => {
     let desaparecerFormulario = document.getElementById("crearCuenta");
     desaparecerFormulario.style.display = "none";
       
-    window.cipher.encode(offset, string) //llamas a la funcion en cipher        
+    window.cipher.encode(offset, string)        
     
 }
 const enlaceCuentaCreada = document.getElementById("enlaceBienvenida");
@@ -43,17 +43,7 @@ const puedesEntrar = () => {
         desaparecerPuerta.style.display="none"; 
 
         
-       
-        /*offset2 = parseInt(offset2);
-        let quitarOffset = "";
-        let decrypted = "";
-        
-        for (let i = 0; i < palabraEncriptada.length; i ++) {
-
-        let volverAscii = palabraEncriptada.charCodeAt(i);
-        quitarOffset = (volverAscii-65-offset2)%26+65;
-        decrypted = decrypted+String.fromCharCode(quitarOffset);
-        document.getElementById("decryptedword").innerHTML=decrypted;        */
+  
 
         }  else {
 

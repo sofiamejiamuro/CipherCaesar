@@ -5,10 +5,12 @@
         <meta charset="UTF-8">
         <meta name="description" content="proyecto cifrado Cesar Laboratoria">
         <meta name="author" content="SOFIA MEJIA">
-        <!--estilos CSS-->
-        <link rel="stylesheet" href="style.css">
         <!--fuentes GOOGLE-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,800&display=swap" rel="stylesheet"> 
+
+        <!--estilos CSS-->
+        <link rel="stylesheet" href="style.css">
+        
     </head> 
 
 <body>
@@ -77,8 +79,13 @@
     <!--DOOR-->
 
     <!--DOOR1-->
+
+   
+
     <section id="puerta">
-        <form >
+
+       
+        <form id="formPuerta">
             <!--USER NAME-->
             <label for="username">Ingresa tu nombre</label>
             <input id="name2" type="text" placeholder="nombre" value="" required>
@@ -86,23 +93,36 @@
             <label for="codigo">Ingresa tu código</label>
             <input id="codigo" type="text" placeholder="codigo" value="" required>
             <a id="enlaceCorrecto" href="#correcto">ENVIAR</a>
- 
+            
         </form>
+       
+
+        <div id="color"></div>
 
      </section>
 
+
          <!--DOOR2-->
     <section id="correcto">
-        <h1>ENTRA</h1>
-        <h3 >Confirmo tu palabra clave <span id="decryptedword"></span> </h3>
-        <p>flechita de regreso</p>
+            <p>¡PUEDES ENTRAR!                 
+            <br> Confirmo tu palabra clave: <span id="decryptedword"></span> </p>
+            
+            
+            <!--<p>flechita de regreso</p>-->
+        
+
+        <div id="color"></div>
+        
     </section>
 
-    <!--DOOR3-->
+    <!--DOOR3-->  <!--no sale por css none , necesito una funcion -->
     <section id="incorrecto">
-        <h1>Codigo o usuario incorreccto</h1>
-        <a id="volverAIntentar"href="#nombreYcodigo"></a>
         
+        <p>Codigo o usuario incorrecto
+        <a id="volverAIntentar" href="#puerta" >Volver a intentar</a>
+        </p>
+        <div id="color"></div>
+
     </section>
    
 
