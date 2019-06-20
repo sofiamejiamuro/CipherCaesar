@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CIPHER CESAR PROJECT</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="proyecto cifrado Cesar Laboratoria">
+        <meta name="author" content="SOFIA MEJIA">
+        <!--fuentes GOOGLE-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,800&display=swap" rel="stylesheet"> 
+
+        <!--estilos CSS-->
+        <link rel="stylesheet" href="style.css">
+        <!--iconos-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
+    </head> 
+
+<body>
+    <!--APP1-->
+  
+    <section id ="inicio" class="app1imagen">       
+        
+            <h1 class="cosp">COWORKING SPACES</h1>
+           
+            <div id="icono2">
+            <i class="icono fas fa-angle-double-down"></i>
+            </div>
+           
+    </section>
+    
+    <!--APP2-->    
+    <article id="crearCuenta">
+        <main class="formularioCrearCuenta">
+            <h1>SING UP</h1>
+            
+            <form>                
+                <!--USERNAME UNPUT-->   
+                <label for="username">Ingresa tu nombre</label>
+                <input id="name1" type="text" placeholder="nombre" value="" required> <!--Cómo hago que los campos sean oblogatorios?-->
+                <!--PALABRA CLAVE-->
+                <label for="keyword">Ingresa tu palabra clave</label>
+                <input id="keyword1" type="text" placeholder="palabra clave" value="" required>
+                <!--NUMERO DE SEGURIDAD-->
+                <label for="offset">Ingresa tu número de seguridad</label>
+                <input id="offset1" type="text" placeholder="un numero que no vayas a olvidar" value="" required>
+                
+                <a id="enlaceBienvenida" href="#cuentaCreada" >NUEVO CÓDIGO</a>
+
+            </form>
+            
+        </main>
+      
+        <footer>
+        <!--cómo pongo la flecha??
+            <a href="#inicio">FLECHA footer</a>-->
+        </footer>
+    </article>
+
+  
+    
+    <!--APP3-->
+    <main id="codigoCreado">
+        
+        <div class="app3h2">
+        <h2 class="texto1App3">Tu código para acceder a tu COWORKING SPACE:</h2>
+        </div>
+        <div class="app3h3">
+        <h3 id="encryptedkeyword" class="texto2App3" ></h3>
+
+        <a id="enlacePuerta" href="#puerta">PANTALLA DE PUERTA FICTICIA</a>
+        </div>
+
+       
+        
+    </main>
+    
+    
+    
+    
+    
+    <!--DOOR-->
+    <!--DOOR-->
+
+    <!--DOOR1-->
+
+   
+
+    <section id="puerta">
+
+       
+        <form id="formPuerta">
+            <!--USER NAME-->
+            <label for="username">Ingresa tu nombre</label>
+            <input id="name2" type="text" placeholder="nombre" value="" required>
+            <!--USER CODe-->
+            <label for="codigo">Ingresa tu código</label>
+            <input id="codigo" type="text" placeholder="codigo" value="" required>
+            <a id="enlaceCorrecto" href="#correcto">ENVIAR</a>
+            
+        </form>
+       
+
+        <div class="color"></div>
+
+     </section>
+
+
+         <!--DOOR2-->
+    <section id="correcto">
+            <p>¡PUEDES ENTRAR!                 
+            <br> Confirmo tu palabra clave: <span id="decryptedword"></span> </p>
+            
+            
+            <!--<p>flechita de regreso</p>-->
+        
+
+        <div class="color"></div>
+        
+    </section>
+
+    <!--DOOR3-->  <!--no sale por css none , necesito una funcion -->
+    <section id="incorrecto">
+        
+        <p>Codigo o usuario incorrecto
+        <a id="volverAIntentar" href="#puerta" >VOLVER A INTENTAR</a>
+        </p>
+        <div class="color"></div>
+
+    </section>
+   
+
+<!--SCRIPT-->
+
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
+   
+
+
+  </body>
+
+
+
+
+</html>
