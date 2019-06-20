@@ -10,18 +10,20 @@ window.cipher = {
         let desplazamiento = "";
         let encrypted = "";
 
+       
+       
         for (let i = 0; i < string.length; i ++) {
             
-            let ascii = string.charCodeAt(i); //nos da su posicion ascii
-            desplazamiento =  (ascii-65+offset)%26+65; // nos recorre el offset 
-            encrypted = encrypted+String.fromCharCode(desplazamiento); //la vuelve no ascii otra vez
-            document.getElementById("encryptedkeyword").innerHTML = encrypted;
-
+            let ascii = string.charCodeAt(i); 
+            desplazamiento =  (ascii-65+offset)%26+65; 
+            encrypted = encrypted+String.fromCharCode(desplazamiento); 
+            
+           
+            window.index.mostrarCodigoCreado(encrypted);
             
             
         }
 
-        // console.log(encripted);
         return encrypted;
 
     },
@@ -38,8 +40,8 @@ window.cipher = {
             quitarOffset = (volverAscii + 65 - offset2) % 26 + 65;
             //desplazamiento =  (ascii-65+offset)%26+65;
             decrypted = decrypted+String.fromCharCode(quitarOffset);
-            document.getElementById("decryptedword").innerHTML=decrypted;     
-
+                
+           window.index.puedesEntrar(decrypted);
         }
         
         

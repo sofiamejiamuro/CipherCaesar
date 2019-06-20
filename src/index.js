@@ -1,17 +1,25 @@
-       
+  
 const mostrarCodigoCreado = () => {         
     
-    let string = document.getElementById("keyword1").value;
-    let offset = document.getElementById("offset1").value;
     
     let aparecerCodigoCreado = document.getElementById("codigoCreado");    
     aparecerCodigoCreado.style.display = "block";
     let desaparecerFormulario = document.getElementById("crearCuenta");
-    desaparecerFormulario.style.display = "none";
+    desaparecerFormulario.style.display = "none"; 
+    let string = document.getElementById("keyword1").value;
+    let offset = document.getElementById("offset1").value;
     
-    window.cipher.encode(offset, string)        
+
     
+    window.cipher.encode(offset, string);   
+
+    document.getElementById("encryptedkeyword").innerHTML = encrypted;
+
 }
+
+
+
+
 const enlaceCuentaCreada = document.getElementById("enlaceBienvenida");
     enlaceCuentaCreada.addEventListener("click",mostrarCodigoCreado);
 
@@ -53,8 +61,13 @@ const puedesEntrar = () => {
         desaparecerPuerta.style.display="none"; 
         }
 
+        
+     
     window.cipher.decode(offset2, palabraEncriptada);
 
+    document.getElementById("decryptedword").innerHTML=decrypted;
+
+    
 }
       
 
