@@ -204,19 +204,24 @@ body,p,h1 {
 
 #codigoCreado a {
     margin: 0;
-    padding: 0;
+    padding: 2%;
     text-align: center;
-    background-color: rgba(20, 158, 151, 0.5);
+    background-color:   rgb(39, 55, 70);
     position: relative;
     top: 80%;
-    left:  30%;;
-    color:  rgb(32, 35, 36);
+    left:  20%;;
+    color:  rgb(72, 201, 176);
     font-size: 2em;
     text-decoration-line: none;
     font-family: 'Montserrat Alternates', sans-serif;
-    border-radius: 3px 3px;
+    border-radius: 8px 8px;
+    transition: .4s;
 }
 
+#codigoCreado a:hover {
+    background-color: rgb(72, 201, 176);
+    color: rgb(39, 55, 70);
+}
 /*DOOR1*/
 .color {
 
@@ -305,7 +310,7 @@ body,p,h1 {
     background: rgba(70, 71, 1, .7);
     text-decoration: none;    
     margin: 15px 0 0 0;
-    padding: 3px 0 0 0;
+    padding: 8px 0 0 0;
     text-align: center;
     color: rgba(177, 180, 89, 1);
     display: block;
@@ -313,6 +318,7 @@ body,p,h1 {
     left: 10%;
     top: 12%;
     border-radius: 20px;
+    font-size: 1.5em;
 }
 /* DOOR 2*/
 #correcto {
@@ -349,7 +355,7 @@ body,p,h1 {
 
 #incorrecto p {
     margin: 0;
-    padding: 80px 20px;
+    padding: 100px 20px;
     float: left;
     z-index: 1000;
     position: relative;
@@ -370,8 +376,8 @@ body,p,h1 {
     width: 80%;
     background: rgba(70, 71, 1, .7);
     text-decoration: none;    
-    margin: 15px 0 0 0;
-    padding: 3px 0 0 0;
+    margin: 5% 0 0 0;
+    padding: 8px 6px 0 6px;
     text-align: center;
     color: rgba(177, 180, 89, 1);
     display: block;
@@ -379,6 +385,7 @@ body,p,h1 {
     left: 10%;
     top: 12%;
     border-radius: 20px;
+    font-size: 1em;
 }
 
 

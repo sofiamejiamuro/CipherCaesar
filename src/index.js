@@ -8,7 +8,7 @@ const mostrarCodigoCreado = () => {
     aparecerCodigoCreado.style.display = "block";
     let desaparecerFormulario = document.getElementById("crearCuenta");
     desaparecerFormulario.style.display = "none";
-      
+    
     window.cipher.encode(offset, string)        
     
 }
@@ -33,16 +33,17 @@ const puedesEntrar = () => {
     let desaparecerPuerta = document.getElementById("puerta");
     let offset2 = document.getElementById("offset1").value;
     
-    
+       
 
-    if (name1 == name2 && codigo == palabraEncriptada) {
+    if (codigo === "") {
+        alert("Debes llenar los campos");
+
+    }    else if (name1 === name2 && codigo === palabraEncriptada) {
  
         
         let codigoCorrecto = document.getElementById("correcto");
         codigoCorrecto.style.display="block";        
-        desaparecerPuerta.style.display="none"; 
-
-        
+        desaparecerPuerta.style.display="none";     
   
 
         }  else {
@@ -50,12 +51,14 @@ const puedesEntrar = () => {
         let codigoIncorrecto =document.getElementById("incorrecto");
         codigoIncorrecto.style.display="block";            
         desaparecerPuerta.style.display="none"; 
-    }
+        }
 
     window.cipher.decode(offset2, palabraEncriptada);
 
-        
 }
+      
+
+
    
 const enlaceCorrecto  = document.getElementById("enlaceCorrecto");
 enlaceCorrecto.addEventListener("click",puedesEntrar);
@@ -71,3 +74,11 @@ btn.addEventListener("click", () => {
     })
 })    
 
+const volverAIntentar = () => {
+    let aparecerDoor1 =  document.getElementById("puerta");
+    aparecerDoor1.style.display="block";
+    let desaparecerIncorrecto =  document.getElementById("incorrecto");
+    desaparecerIncorrecto.style.display="none";
+}
+const enlaceVolverAIntentar = document.getElementById("volverAIntentar");
+    enlaceVolverAIntentar.addEventListener("click",volverAIntentar);
