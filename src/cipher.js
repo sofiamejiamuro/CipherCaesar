@@ -18,8 +18,9 @@ window.cipher = {
             desplazamiento =  (ascii-65+offset)%26+65; 
             encrypted = encrypted+String.fromCharCode(desplazamiento); 
             
-           
-            window.index.mostrarCodigoCreado(encrypted);
+            document.getElementById("encryptedkeyword").innerHTML = encrypted;
+            
+            
             
             
         }
@@ -41,7 +42,9 @@ window.cipher = {
             //desplazamiento =  (ascii-65+offset)%26+65;
             decrypted = decrypted+String.fromCharCode(quitarOffset);
                 
-           window.index.puedesEntrar(decrypted);
+          
+    document.getElementById("decryptedword").innerHTML=decrypted;
+    
         }
         
         

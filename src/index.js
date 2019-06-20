@@ -13,7 +13,8 @@ const mostrarCodigoCreado = () => {
     
     window.cipher.encode(offset, string);   
 
-    document.getElementById("encryptedkeyword").innerHTML = encrypted;
+
+    
 
 }
 
@@ -65,7 +66,6 @@ const puedesEntrar = () => {
      
     window.cipher.decode(offset2, palabraEncriptada);
 
-    document.getElementById("decryptedword").innerHTML=decrypted;
 
     
 }
