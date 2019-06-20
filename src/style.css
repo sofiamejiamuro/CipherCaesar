@@ -24,52 +24,45 @@ body,p,h1 {
 .cosp {
 
     text-align: center;
-    font-size: 6em;
+    font-size: 8em;
     /*font*/
     font-kerning:normal;
     color: #f3d18e;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-70%);
-    padding: 5%;
-    background-color: rgba(97, 62, 59, .4);
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 2%;
+    background-color: rgba(97, 62, 59, .75);
     border-radius: 2% 2%;
 
 }
 
-.singUp,.codigo {
-    position: absolute;
-    color:  rgba(51, 34, 0, 1);
-    font-weight: lighter;
-    background-color: rgb(203, 192, 170,.4);
-    border-radius: 2% 2%;
-    padding: 1%;
-}
 
-.singUp {
-    
-    bottom: 8%;
-    left: 35%;
-    
-    font-size: 1.5em;
-}
 
-.codigo {    
-    bottom: 7%;
-    right: 35%;
+#icono2 {     
+    font-size: 12em;
+    color: rgb(39, 55, 70);  
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 45%;
+    top: 65%;
+    cursor: pointer;
+    transition: .3s;
+   
+    width: 10%;
     text-align: center;
-    
-
 }
 
-a#enlaceCodigoDeAcceso{
-    color:  rgba(51, 34, 0, 1);
-    font-size: 1.5em;
-    text-decoration: none;
+#icono2:hover {
+    color: rgb(72, 201, 176);
+}
+
+
+
    
     /*font*/
-}
 
 /*APP2 sing up */
 #crearCuenta {
@@ -142,7 +135,7 @@ a#enlaceCodigoDeAcceso{
   }
 
   .formularioCrearCuenta a:hover {
-      background-color: rgba(136,212,152,1);
+      background-color: rgb(72, 201, 176);
      
   }
 

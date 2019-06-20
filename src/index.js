@@ -61,5 +61,13 @@ const enlaceCorrecto  = document.getElementById("enlaceCorrecto");
 enlaceCorrecto.addEventListener("click",puedesEntrar);
 
 
+let inicio = document.getElementById("inicio");
+let btn = document.getElementById("icono2");
+btn.addEventListener("click", () => {
+    window.scroll({
+        top: inicio.scrollHeight,
+        left: 0,
+        behavior: "smooth"
+    })
+})    
 
-    
